@@ -2,3 +2,7 @@
 
 export(applykM2WGCNA)
 export(corDistance)
+export(genNetFromPartition)
+import(WGCNA)
+import(gProfileR)
+importFrom(WGCNA,moduleEigengenes)

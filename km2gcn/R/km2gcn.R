@@ -4,7 +4,8 @@
 ###############################################################################
 
 
-
+#' @import WGCNA
+#' @import gProfileR
 
 
 createCentroidMatrix <- function(eigengenes){
@@ -81,7 +82,7 @@ getExchangedGenes <- function(old.partition,new.partition){
 #' @param min.genes.for.grey The number of genes to consider grey genes as part of the optimization
 #' @return The network, post-processed with a k-means heuristic
 #' @export
-#' @
+
 applykM2WGCNA <- function(net.label,
                           net.file,
                           expr.data,
@@ -122,7 +123,7 @@ applykM2WGCNA <- function(net.label,
     mods = paste0("ME",mods)
     net$MEs = net$MEs[,colnames(net$MEs) %in% mods]
   }
-  cat("The network includes",net$moduleColors,"genes and ",
+  cat("The network includes",length(net$moduleColors),"genes and ",
       length(unique(net$moduleColors)),"modules\n")
 
   if(plot.evolution){
