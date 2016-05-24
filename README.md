@@ -5,7 +5,9 @@ This package is an additional step for refining the gene clusters obtained by WG
 
 This package starts with such object, and applying a k-means heuristic, improves the clusters in many directions:
 -it increases the eigengene as a proxy by getting more genes in each cluster whose MM is the highest in that module.
+
 -it increases the GO enrichment of the modules (it uses gProfileR) to generate a GO functional description of module function
+
 -it increases module preservation.
 
 A paper which describes the approach is on the way
