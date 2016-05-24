@@ -5,8 +5,6 @@
 
 
 
-library(WGCNA)
-library(gProfileR)
 
 
 createCentroidMatrix <- function(eigengenes){
