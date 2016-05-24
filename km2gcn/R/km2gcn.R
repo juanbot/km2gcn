@@ -5,8 +5,8 @@
 
 
 
-require(WGCNA)
-require(gProfileR)
+library(WGCNA)
+library(gProfileR)
 
 
 createCentroidMatrix <- function(eigengenes){
