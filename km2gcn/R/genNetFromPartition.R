@@ -16,42 +16,42 @@ genNetFromPartition <- function(expr.data.file,
                                 partitions.file,
                                 mgg,
                                 index=-1){
-  
+
   parts <- readRDS(partitions.file)
-  
+
   if(index < 0)
     index = length(parts)
-  
+
   colors = unique(names(parts[[1]]))
   col.number = unique(parts[[1]])
-  
+
   if(typeof(expr.data.file) == "character")
     expr.data = readRDS(expr.data.file)
   else
     expr.data = expr.data.file
-  
+
   new.net <- NULL
   if(index == 1){
     new.net$moduleLabels = parts[[index]]
     new.net$moduleColors = names(parts[[index]])
     names(new.net$moduleColors) = colnames(expr.data)
     names(new.net$moduleLabels) = colnames(expr.data)
-    
+
   }else{
     new.net$moduleLabels = parts[[index]]
     new.net$moduleColors = colors[match(parts[[index]],col.number)]
     names(new.net$moduleColors) = colnames(expr.data)
     names(new.net$moduleLabels) = colnames(expr.data)
-    
+
   }
-  
+
   #If there are some grey genes as NA, add them again
   new.net$moduleColors[is.na(new.net$moduleColors)] = "grey"
-  
+
   if(sum(new.net$moduleColors == "grey") >= mgg)
     new.net$MEs <- moduleEigengenes(expr.data,new.net$moduleColors,softPower=beta, excludeGrey=F)$eigengenes
   else
     new.net$MEs <- moduleEigengenes(expr.data,new.net$moduleColors,softPower=beta, excludeGrey=T)$eigengenes
-  
+
   return(new.net)
 }

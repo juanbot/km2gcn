@@ -26,6 +26,7 @@ Microarray gene expression and WGCNA network for 1K genes from UKBEC White Matte
 %%  ~~ possibly secondary sources and usages ~~
 }
 \examples{
+library(km2gcn)
 data(km2gcndata)
 net = applykM2WGCNA(net.label="dummy",
   net.file=km2gcndata$net,

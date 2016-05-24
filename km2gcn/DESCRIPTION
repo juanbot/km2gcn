@@ -8,4 +8,4 @@ Description: This implemenets a basic method to (hopefully) improve a clustering
 License: LGPL
 LazyData: TRUE
 RoxygenNote: 5.0.1
-
+Imports: WGCNA, gProfileR
