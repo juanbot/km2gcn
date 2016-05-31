@@ -10,9 +10,9 @@ getBestModuleCor(gene, centroids, signed = TRUE)
 \arguments{
 \item{gene}{numerical vector with the gene expression}
 
-\item{signed}{is the network signed?}
+\item{centroids}{Matrix with many rows as \code{gene} components and a column for each module eigengene}
 
-\item{Matrix}{with many rows as \code{gene} components and a column for each module eigengene}
+\item{signed}{is the network signed?}
 }
 \value{
 The index of the eigengene within the matrix passed as argument

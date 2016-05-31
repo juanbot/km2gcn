@@ -93,6 +93,7 @@ plotGOenrichment <- function(net.label,
   vals.to.plot <-  c(vals.to.plot,sum(enrichment[2,])-sum(enrichment[1,]))
   order.to.plot = order(vals.to.plot,decreasing=TRUE)
   mod.cols <- c(modules,"gold")
+  cat("printing barplot\n\n\n\n")
   barplot(vals.to.plot[order.to.plot],col=mod.cols[order.to.plot],
           main=paste0(net.label, ": GO gain after post-processing WGNCA"),xlab="Network modules",
           ylab="sum(-log10(pval))" )

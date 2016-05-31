@@ -1,6 +1,51 @@
 {
     "debugBreakpointsState" : {
         "breakpoints" : [
+            {
+                "editor_line_number" : 97,
+                "editor_state" : 1,
+                "function_name" : "plotGOenrichment",
+                "function_steps" : "26",
+                "id" : 1,
+                "is_package_breakpoint" : true,
+                "is_pending_debug_completion" : false,
+                "line_number" : 97,
+                "needs_updated_steps" : false,
+                "package_name" : "km2gcn",
+                "path" : "~/Dropbox/working papers/kmeans/R/km2gcn/R/plotGOenrichment.R",
+                "state" : 1,
+                "type" : 0
+            },
+            {
+                "editor_line_number" : 68,
+                "editor_state" : 1,
+                "function_name" : "plotGOenrichment",
+                "function_steps" : "19,4,8,4,2",
+                "id" : 2,
+                "is_package_breakpoint" : true,
+                "is_pending_debug_completion" : false,
+                "line_number" : 68,
+                "needs_updated_steps" : false,
+                "package_name" : "km2gcn",
+                "path" : "~/Dropbox/working papers/kmeans/R/km2gcn/R/plotGOenrichment.R",
+                "state" : 1,
+                "type" : 0
+            },
+            {
+                "editor_line_number" : 61,
+                "editor_state" : 1,
+                "function_name" : "plotGOenrichment",
+                "function_steps" : "19,4,5",
+                "id" : 3,
+                "is_package_breakpoint" : true,
+                "is_pending_debug_completion" : false,
+                "line_number" : 61,
+                "needs_updated_steps" : false,
+                "package_name" : "km2gcn",
+                "path" : "~/Dropbox/working papers/kmeans/R/km2gcn/R/plotGOenrichment.R",
+                "state" : 1,
+                "type" : 0
+            }
         ]
     }
 }
