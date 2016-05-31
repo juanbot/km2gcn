@@ -23,6 +23,12 @@ install_github(repo="juanbot/km2gcn/km2gcn")
 
 *****
 
+Alternatively you can download the source tarball from
+
+https://github.com/juanbot/km2gcn/blob/master/km2gcn_0.1.0.tar.gz
+
+and install from the source. 
+
 And here is an example
 
 *****
