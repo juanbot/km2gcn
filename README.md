@@ -13,7 +13,8 @@ This package starts with such object, and applying a k-means heuristic, improves
 
 A paper which describes the approach is on the way
 
-To install from R console
+To install from R console, issue these commands
 
-> library(devtools)
-> install_github(repo="juanbot/km2gcn/km2gcn")
+library(devtools)
+
+install_github(repo="juanbot/km2gcn/km2gcn")
