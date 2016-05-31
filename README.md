@@ -15,6 +15,23 @@ A paper which describes the approach is on the way
 
 To install from R console, issue these commands
 
+*****
+
 library(devtools)
 
 install_github(repo="juanbot/km2gcn/km2gcn")
+
+*****
+
+And here is an example
+
+*****
+
+library(km2gcn)
+
+data(km2gcndata)
+
+net = applykM2WGCNA(net.label="dummy", net.file=km2gcndata$net, expr.data=km2gcndata$expr, job.path="~/tmp/", meg=0) 
+
+*****
+  
