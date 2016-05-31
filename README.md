@@ -12,3 +12,8 @@ This package starts with such object, and applying a k-means heuristic, improves
 -it increases module preservation.
 
 A paper which describes the approach is on the way
+
+To install from R console
+
+> library(devtools)
+> install_github(repo="juanbot/km2gcn/km2gcn")
