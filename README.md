@@ -41,3 +41,8 @@ net = applykM2WGCNA(net.label="dummy", net.file=km2gcndata$net, expr.data=km2gcn
 
 *****
   
+For more information on how the algorithm works, check the paper here. And if you want to reference as, use this paper as the reference.
+
+https://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-017-0420-6
+
+*****
